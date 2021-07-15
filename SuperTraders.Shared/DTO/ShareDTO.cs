@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperTraders.DTO
+namespace SuperTraders.Shared.DTO
 {
   public class ShareDTO
   {

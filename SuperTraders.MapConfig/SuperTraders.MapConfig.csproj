@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SuperTraders.DTO\SuperTraders.DTO.csproj" />
     <ProjectReference Include="..\SuperTraders.Model\SuperTraders.Model.csproj" />
+    <ProjectReference Include="..\SuperTraders.Shared\SuperTraders.Shared.csproj" />
   </ItemGroup>
 
 </Project>

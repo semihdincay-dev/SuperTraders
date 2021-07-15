@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperTraders.DTO
+namespace SuperTraders.Shared.DTO
 {
-  public class UserShareDTO
+  public class TradingTransactionDTO
   {
     public int id { get; set; }
+    public short transactiontype { get; set; }
     public string name { get; set; }
     public int quantity { get; set; }
     public decimal price { get; set; }
