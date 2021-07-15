@@ -1,10 +1,10 @@
-﻿using SuperTraders.Model.Base;
+﻿using SuperTraders.Core.Entities;
 using SuperTraders.Shared.Enum;
 using System.Collections.Generic;
 
 namespace SuperTraders.Model
 {
-  public class TradingTransaction : BaseModel
+  public class TradingTransaction : Entity<int>
   {
     public TradingTransaction()
     {

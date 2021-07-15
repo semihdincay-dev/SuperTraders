@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SuperTraders.Core\SuperTraders.Core.csproj" />
+    <ProjectReference Include="..\SuperTraders.Model\SuperTraders.Model.csproj" />
     <ProjectReference Include="..\SuperTraders.Shared\SuperTraders.Shared.csproj" />
   </ItemGroup>
 

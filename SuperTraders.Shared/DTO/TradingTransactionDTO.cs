@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SuperTraders.Shared.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace SuperTraders.Shared.DTO
     public string name { get; set; }
     public int quantity { get; set; }
     public decimal price { get; set; }
+    public ETradingTransactionResult Result { get; set; }
+    public string ResultMessage { get; set; }
     public int created_by { get; set; }
     public DateTime created_on { get; set; }
     public int modified_by { get; set; }

@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SuperTraders.Core\SuperTraders.Core.csproj" />
     <ProjectReference Include="..\SuperTraders.Shared\SuperTraders.Shared.csproj" />
   </ItemGroup>
 

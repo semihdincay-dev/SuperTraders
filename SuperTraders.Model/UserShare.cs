@@ -1,14 +1,10 @@
-﻿using SuperTraders.Model.Base;
-using System;
+﻿using SuperTraders.Core.Entities;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SuperTraders.Model
 {
-  public class UserShare : BaseModel
+  public class UserShare : Entity<int>
   {
     public UserShare()
     {

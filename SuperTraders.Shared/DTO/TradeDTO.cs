@@ -11,7 +11,6 @@ namespace SuperTraders.Shared.DTO
     public short transactiontype { get; set; }
     public string name { get; set; }
     public int quantity { get; set; }
-    public decimal price { get; set; }
     public int share_id { get; set; }
     public int user_id { get; set; }
 

@@ -1,13 +1,9 @@
-﻿using SuperTraders.Model.Base;
-using System;
+﻿using SuperTraders.Core.Entities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SuperTraders.Model
 {
-  public class User : BaseModel
+  public class User : Entity<int>
   {
     public User()
     {
