@@ -8,11 +8,11 @@ namespace SuperTraders.Shared.DTO
 {
   public class TradeDTO
   {
-    public short transactiontype { get; set; }
-    public string name { get; set; }
-    public int quantity { get; set; }
-    public int share_id { get; set; }
-    public int user_id { get; set; }
+    public short Transactiontype { get; set; }
+    public string Name { get; set; }
+    public int Quantity { get; set; }
+    public int Share_id { get; set; }
+    public int User_id { get; set; }
 
   }
 }

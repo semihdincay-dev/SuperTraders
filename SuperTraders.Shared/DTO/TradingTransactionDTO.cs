@@ -9,18 +9,18 @@ namespace SuperTraders.Shared.DTO
 {
   public class TradingTransactionDTO
   {
-    public int id { get; set; }
-    public short transactiontype { get; set; }
-    public string name { get; set; }
-    public int quantity { get; set; }
-    public decimal price { get; set; }
+    public int Id { get; set; }
+    public short Transactiontype { get; set; }
+    public string Name { get; set; }
+    public int Quantity { get; set; }
+    public decimal Price { get; set; }
     public ETradingTransactionResult Result { get; set; }
     public string ResultMessage { get; set; }
-    public int created_by { get; set; }
-    public DateTime created_on { get; set; }
-    public int modified_by { get; set; }
-    public DateTime modified_on { get; set; }
-    public int deleted_by { get; set; }
-    public DateTime deleted_on { get; set; }
+    public int Created_by { get; set; }
+    public DateTime Created_on { get; set; }
+    public int Modified_by { get; set; }
+    public DateTime Modified_on { get; set; }
+    public int Deleted_by { get; set; }
+    public DateTime Deleted_on { get; set; }
   }
 }

@@ -34,11 +34,11 @@ namespace SuperTraders.BLL.Concrete
        3-UserShare tablosuna ilgili hisse ile alakalı güncelleme yap. İlgili hisse daha önce alınmışsa miktarı artır.
        */
       TradingTransaction tradingTransaction = new TradingTransaction();
-      tradingTransaction.Name = data.name;
-      tradingTransaction.Quantity = data.quantity;
+      tradingTransaction.Name = data.Name;
+      tradingTransaction.Quantity = data.Quantity;
       tradingTransaction.TransactionType = ETradingTransactionType.Buy;
 
-      var share = _unitOfWork.GetRepository<Share>().Get(s => s.Id == data.share_id);
+      var share = _unitOfWork.GetRepository<Share>().Get(s => s.Id == data.Share_id);
 
       if (share == null) //Alınmak istenen hissenin, sistemde kayıtlı olup olmadığının kontrolü
       {
@@ -47,28 +47,28 @@ namespace SuperTraders.BLL.Concrete
       }
       else
       {
-        var lastPrice = share.lastprice;
+        var lastPrice = share.Price;
         tradingTransaction.Price = lastPrice;
-        var userShare = _unitOfWork.GetRepository<UserShare>().Get(s => s.share_id == data.share_id);
+        var userShare = _unitOfWork.GetRepository<UserShare>().Get(s => s.Share_id == data.Share_id);
         if (userShare == null)//Alış yapılacak hisse, portföyde yoksa yeni kayıt oluşturulmalı
         {
           userShare = new UserShare();
-          userShare.name = data.name;
-          userShare.price = lastPrice;
-          userShare.quantity = data.quantity;
-          userShare.created_by = data.user_id;
-          userShare.created_on = DateTime.Now;
+          userShare.Name = data.Name;
+          userShare.Price = lastPrice;
+          userShare.Quantity = data.Quantity;
+          userShare.Created_by = data.User_id;
+          userShare.Created_on = DateTime.Now;
           tradingTransaction.ResultMessage = "Seçilen hisse başarıyla alındı ve portföye eklendi.";
         }
         else //Alış yapılacak hisse, portföyde varsa, miktar güncellenmeli
         {
-          userShare.quantity = userShare.quantity + data.quantity;
-          userShare.modified_by = data.user_id;
-          userShare.modified_on = DateTime.Now;
+          userShare.Quantity = userShare.Quantity + data.Quantity;
+          userShare.Modified_by = data.User_id;
+          userShare.Modified_on = DateTime.Now;
           tradingTransaction.ResultMessage = "Seçilen hisse başarıyla alındı ve portföydeki miktarı güncellendi.";
         }
-        userShare.user_id = data.user_id;
-        userShare.share_id = data.share_id;
+        userShare.User_id = data.User_id;
+        userShare.Share_id = data.Share_id;
         tradingTransaction.Result = ETradingTransactionResult.Success;
       }
       _unitOfWork.SaveChanges();
@@ -93,11 +93,11 @@ namespace SuperTraders.BLL.Concrete
        4-Miktar yeterli olacak
        */
       TradingTransaction tradingTransaction = new TradingTransaction();
-      tradingTransaction.Name = data.name;
-      tradingTransaction.Quantity = data.quantity;
+      tradingTransaction.Name = data.Name;
+      tradingTransaction.Quantity = data.Quantity;
       tradingTransaction.TransactionType = ETradingTransactionType.Sell;
 
-      var share = _unitOfWork.GetRepository<Share>().Get(s => s.Id == data.share_id);
+      var share = _unitOfWork.GetRepository<Share>().Get(s => s.Id == data.Share_id);
       if (share == null) //Satılmak istenen hissenin, sistemde kayıtlı olup olmadığının kontrolü
       {
         tradingTransaction.Result = ETradingTransactionResult.Failed;
@@ -105,26 +105,26 @@ namespace SuperTraders.BLL.Concrete
       }
       else
       {
-        var lastPrice = share.lastprice;
+        var lastPrice = share.Price;
         tradingTransaction.Price = lastPrice;
-        var userShare = _unitOfWork.GetRepository<UserShare>().Get(s => s.share_id == data.share_id);
+        var userShare = _unitOfWork.GetRepository<UserShare>().Get(s => s.Share_id == data.Share_id);
         if (userShare == null) //Satılmak istenen hissenin, portföyde olup olmadığının kontrolü
         {
           tradingTransaction.Result = ETradingTransactionResult.Failed;
           tradingTransaction.ResultMessage = "Satılmak istenen hisse, portföyde kayıtlı olmalıdır.";
         }
-        else if (userShare != null && userShare.quantity < data.quantity) //Satılmak istenen hissenin miktar kontrolü
+        else if (userShare != null && userShare.Quantity < data.Quantity) //Satılmak istenen hissenin miktar kontrolü
         {
           tradingTransaction.Result = ETradingTransactionResult.Failed;
           tradingTransaction.ResultMessage = "Satılmak istenen hisse miktarı, portföydeki hisse miktarından fazla olamaz.";
         }
         else
         {
-          userShare.quantity = userShare.quantity - data.quantity;
-          userShare.modified_by = data.user_id;
-          userShare.modified_on = DateTime.Now;
-          userShare.user_id = data.user_id;
-          userShare.share_id = data.share_id;
+          userShare.Quantity = userShare.Quantity - data.Quantity;
+          userShare.Modified_by = data.User_id;
+          userShare.Modified_on = DateTime.Now;
+          userShare.User_id = data.User_id;
+          userShare.Share_id = data.Share_id;
           tradingTransaction.Result = ETradingTransactionResult.Success;
           tradingTransaction.ResultMessage = "Seçilen hisse başarıyla satıldı ve portföydeki miktarı güncellendi.";
         }

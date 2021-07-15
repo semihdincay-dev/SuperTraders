@@ -8,11 +8,13 @@ namespace SuperTraders.Model
     public User()
     {
       UserShares = new HashSet<UserShare>();
+      TradingTransactions = new HashSet<TradingTransaction>();
     }
-    public string name { get; set; }
-    public string surname { get; set; }
-    public string username { get; set; }
-    public string email { get; set; }
+    public string Name { get; set; }
+    public string Surname { get; set; }
+    public string Username { get; set; }
+    public string Email { get; set; }
     public virtual ICollection<UserShare> UserShares { get; set; }
+    public virtual ICollection<TradingTransaction> TradingTransactions { get; set; }
   }
 }

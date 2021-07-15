@@ -8,17 +8,17 @@ namespace SuperTraders.Shared.DTO
 {
   public class UserDTO
   {
-    public int id { get; set; }
-    public string name { get; set; }
-    public string surname { get; set; }
-    public string username { get; set; }
-    public string email { get; set; }
-    public int created_by { get; set; }
-    public DateTime created_on { get; set; }
-    public int modified_by { get; set; }
-    public DateTime modified_on { get; set; }
-    public int deleted_by { get; set; }
-    public DateTime deleted_on { get; set; }
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Surname { get; set; }
+    public string Username { get; set; }
+    public string Email { get; set; }
+    public int Created_by { get; set; }
+    public DateTime Created_on { get; set; }
+    public int Modified_by { get; set; }
+    public DateTime Modified_on { get; set; }
+    public int Deleted_by { get; set; }
+    public DateTime Deleted_on { get; set; }
 
   }
 }
