@@ -1,13 +1,9 @@
-﻿using SuperTraders.Model.Base;
+﻿using SuperTraders.Core.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SuperTraders.Model
 {
-  public class Share : BaseModel
+  public class Share : Entity<int>
   {
     public string name { get; set; }
     public decimal lastprice { get; set; }
