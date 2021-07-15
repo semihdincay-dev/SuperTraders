@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTraders", "SuperTraders\SuperTraders.csproj", "{98B3E7CF-58D5-4FEE-8FFD-C7E93AB3D607}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperTraders", "SuperTraders\SuperTraders.csproj", "{98B3E7CF-58D5-4FEE-8FFD-C7E93AB3D607}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTraders.Core", "SuperTraders.Core\SuperTraders.Core.csproj", "{5157B72B-BA6B-4D19-A786-E46A6B987016}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperTraders.Core", "SuperTraders.Core\SuperTraders.Core.csproj", "{5157B72B-BA6B-4D19-A786-E46A6B987016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTraders.Model", "SuperTraders.Model\SuperTraders.Model.csproj", "{0AE58DDB-230A-43CB-8919-937C201DC8B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperTraders.Model", "SuperTraders.Model\SuperTraders.Model.csproj", "{0AE58DDB-230A-43CB-8919-937C201DC8B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTraders.BLL", "SuperTraders.BLL\SuperTraders.BLL.csproj", "{27A51369-33CE-43C1-B61D-60DD340724D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperTraders.BLL", "SuperTraders.BLL\SuperTraders.BLL.csproj", "{27A51369-33CE-43C1-B61D-60DD340724D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTraders.DTO", "SuperTraders.DTO\SuperTraders.DTO.csproj", "{D7061E87-D07A-4719-B54F-111D0F29E4C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperTraders.DTO", "SuperTraders.DTO\SuperTraders.DTO.csproj", "{D7061E87-D07A-4719-B54F-111D0F29E4C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTraders.Mapping", "SuperTraders.Mapping\SuperTraders.Mapping.csproj", "{C804F60B-CEA4-4E49-916F-DFF65B86ED92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTraders.MapConfig", "SuperTraders.MapConfig\SuperTraders.MapConfig.csproj", "{52B8B625-787D-4CB1-B798-D32408EE7664}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{D7061E87-D07A-4719-B54F-111D0F29E4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7061E87-D07A-4719-B54F-111D0F29E4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7061E87-D07A-4719-B54F-111D0F29E4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C804F60B-CEA4-4E49-916F-DFF65B86ED92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C804F60B-CEA4-4E49-916F-DFF65B86ED92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C804F60B-CEA4-4E49-916F-DFF65B86ED92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C804F60B-CEA4-4E49-916F-DFF65B86ED92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B8B625-787D-4CB1-B798-D32408EE7664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B8B625-787D-4CB1-B798-D32408EE7664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B8B625-787D-4CB1-B798-D32408EE7664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B8B625-787D-4CB1-B798-D32408EE7664}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
