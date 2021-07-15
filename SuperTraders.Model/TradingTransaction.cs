@@ -1,18 +1,23 @@
 ﻿using SuperTraders.Model.Base;
-using System;
+using SuperTraders.Shared.Enum;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SuperTraders.Model
 {
   public class TradingTransaction : BaseModel
   {
-    public short transactiontype { get; set; }
-    public string name { get; set; }
-    public int quantity { get; set; }
-    public decimal price { get; set; }
-
+    public TradingTransaction()
+    {
+      Users = new HashSet<User>();
+      Shares = new HashSet<Share>();
+    }
+    public ETradingTransactionType TransactionType { get; set; }
+    public string Name { get; set; }
+    public int Quantity { get; set; }
+    public decimal Price { get; set; }
+    public ETradingTransactionResult Result { get; set; }
+    public string ResultMessage { get; set; }
+    public ICollection<User> Users { get; set; }
+    public ICollection<Share> Shares { get; set; }
   }
 }

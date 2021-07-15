@@ -1,6 +1,6 @@
-﻿using SuperTraders.DTO;
-using SuperTraders.MapConfig.ConfigProfile;
+﻿using SuperTraders.MapConfig.ConfigProfile;
 using SuperTraders.Model;
+using SuperTraders.Shared.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;

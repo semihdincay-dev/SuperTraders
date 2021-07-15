@@ -1,4 +1,4 @@
-﻿using SuperTraders.DTO;
+﻿using SuperTraders.Shared.DTO;
 using SuperTraders.MapConfig.ConfigProfile;
 using SuperTraders.Model;
 using System;
