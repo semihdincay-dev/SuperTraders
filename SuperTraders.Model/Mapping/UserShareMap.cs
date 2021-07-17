@@ -16,10 +16,10 @@ namespace SuperTraders.Model.Mapping
       builder.Property(z => z.Id).ValueGeneratedOnAdd();
       builder.Property(z => z.Id).IsRequired();
       builder.Property(z => z.Name).IsRequired();
-      builder.Property(z => z.Price).HasPrecision(2).IsRequired();
+      builder.Property(z => z.Price).HasPrecision(18, 2).IsRequired();
       builder.Property(z => z.Quantity).IsRequired();
-      builder.Property(z => z.User_id).IsRequired();
-      builder.Property(z => z.Share_id).IsRequired();
+      builder.Property(z => z.UserId).IsRequired();
+      builder.Property(z => z.ShareId).IsRequired();
 
       builder.HasOne<User>(z => z.User).WithMany(z => z.UserShares);
       builder.HasOne<Share>(z => z.Share).WithMany(z => z.UserShares);

@@ -5,15 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SuperTraders.BLL\SuperTraders.BLL.csproj" />
+    <ProjectReference Include="..\SuperTraders.MapConfig\SuperTraders.MapConfig.csproj" />
     <ProjectReference Include="..\SuperTraders.Shared\SuperTraders.Shared.csproj" />
   </ItemGroup>
 

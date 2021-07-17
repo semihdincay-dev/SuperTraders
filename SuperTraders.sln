@@ -11,11 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperTraders.Model", "Super
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperTraders.BLL", "SuperTraders.BLL\SuperTraders.BLL.csproj", "{27A51369-33CE-43C1-B61D-60DD340724D3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperTraders.Mapping", "SuperTraders.Mapping\SuperTraders.Mapping.csproj", "{C804F60B-CEA4-4E49-916F-DFF65B86ED92}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperTraders.MapConfig", "SuperTraders.MapConfig\SuperTraders.MapConfig.csproj", "{52B8B625-787D-4CB1-B798-D32408EE7664}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTraders.Shared", "SuperTraders.Shared\SuperTraders.Shared.csproj", "{24DFABF8-C69D-4F9D-A146-D7727A756DCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperTraders.Shared", "SuperTraders.Shared\SuperTraders.Shared.csproj", "{24DFABF8-C69D-4F9D-A146-D7727A756DCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +37,6 @@ Global
 		{27A51369-33CE-43C1-B61D-60DD340724D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27A51369-33CE-43C1-B61D-60DD340724D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27A51369-33CE-43C1-B61D-60DD340724D3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C804F60B-CEA4-4E49-916F-DFF65B86ED92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C804F60B-CEA4-4E49-916F-DFF65B86ED92}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C804F60B-CEA4-4E49-916F-DFF65B86ED92}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C804F60B-CEA4-4E49-916F-DFF65B86ED92}.Release|Any CPU.Build.0 = Release|Any CPU
 		{52B8B625-787D-4CB1-B798-D32408EE7664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{52B8B625-787D-4CB1-B798-D32408EE7664}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52B8B625-787D-4CB1-B798-D32408EE7664}.Release|Any CPU.ActiveCfg = Release|Any CPU

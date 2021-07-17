@@ -16,7 +16,7 @@ namespace SuperTraders.Model.Mapping
       builder.Property(z => z.Id).ValueGeneratedOnAdd();
       builder.Property(z => z.Name).IsRequired();
       builder.Property(z => z.Symbol).HasMaxLength(3).IsRequired();
-      builder.Property(z => z.Price).HasPrecision(2).IsRequired();
+      builder.Property(z => z.Price).HasPrecision(18, 2).IsRequired();
       builder.Property(z => z.Quantity).IsRequired();
       builder.Property(z => z.Time).IsRequired();
 

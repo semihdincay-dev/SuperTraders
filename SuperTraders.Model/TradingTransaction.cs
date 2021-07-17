@@ -1,6 +1,7 @@
 ﻿using SuperTraders.Core.Entities;
 using SuperTraders.Shared.Enum;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SuperTraders.Model
 {
@@ -13,8 +14,8 @@ namespace SuperTraders.Model
     public ETradingTransactionResult Result { get; set; }
     public string ResultMessage { get; set; }
     public virtual User User { get; set; }
-    public int User_id { get; set; }
+    public int UserId { get; set; }
     public virtual Share Share { get; set; }
-    public int Share_id { get; set; }
+    public int ShareId { get; set; }
   }
 }

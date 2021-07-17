@@ -8,4 +8,8 @@
     <ProjectReference Include="..\SuperTraders.MapConfig\SuperTraders.MapConfig.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ProjectBaseMapping\" />
+  </ItemGroup>
+
 </Project>

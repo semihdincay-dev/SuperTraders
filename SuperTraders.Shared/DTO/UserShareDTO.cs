@@ -12,11 +12,11 @@ namespace SuperTraders.Shared.DTO
     public string Name { get; set; }
     public int Quantity { get; set; }
     public decimal Price { get; set; }
-    public int Created_by { get; set; }
-    public DateTime Created_on { get; set; }
-    public int Modified_by { get; set; }
-    public DateTime Modified_on { get; set; }
-    public int Deleted_by { get; set; }
-    public DateTime Deleted_on { get; set; }
+    public int CreatedBy { get; set; }
+    public DateTime CreatedOn { get; set; }
+    public int ModifiedBy { get; set; }
+    public DateTime ModifiedOn { get; set; }
+    public int DeletedBy { get; set; }
+    public DateTime DeletedOn { get; set; }
   }
 }

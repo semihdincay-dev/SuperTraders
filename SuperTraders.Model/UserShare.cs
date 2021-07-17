@@ -10,9 +10,9 @@ namespace SuperTraders.Model
     public int Quantity { get; set; }
     public decimal Price { get; set; }
     public virtual User User { get; set; }
-    public int User_id { get; set; }
+    public int UserId { get; set; }
     public virtual Share Share { get; set; }
-    public int Share_id { get; set; }
+    public int ShareId { get; set; }
 
   }
 }

@@ -11,10 +11,10 @@ using System.Threading.Tasks;
 namespace SuperTraders.Controllers
 {
   [ApiController]
-  [Route("[controller]")]
+  [Route("[controller]/[action]")]
   public class TradeController : ControllerBase
   {
-    private ITradeService _tradeService;
+    private readonly ITradeService _tradeService;
     private readonly ILogger<TradeController> _logger;
 
     public TradeController(ILogger<TradeController> logger, ITradeService tradeService)
